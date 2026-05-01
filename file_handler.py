@@ -31,6 +31,7 @@ def save_account(filename: str, name: str, account_type: str, balance: float, de
 
     with open(filename, "w", newline="") as file:
         fieldnames = ["name", "account_type", "balance", "deposit_count"]
+# AI used for Dictionary Writing syntax.                
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(accounts)
