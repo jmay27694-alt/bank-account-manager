@@ -13,7 +13,7 @@ class BankController(QMainWindow):
 
         self.account = None
         self.account_type = "None"
-
+# AI used for Signal/Slot syntax and UI State Management.
         self.createAccountButton.clicked.connect(self.create_account)
         self.depositButton.clicked.connect(self.deposit_money)
         self.withdrawButton.clicked.connect(self.withdraw_money)
@@ -140,6 +140,7 @@ class BankController(QMainWindow):
             self.account.set_balance(balance)
             self.account.set_deposit_count(deposit_count)
         else:
+# AI used for Signal/Slot syntax and UI State Management.            
             self.account = Account(data["name"], balance)
 
         self.nameInput.setText(data["name"])
