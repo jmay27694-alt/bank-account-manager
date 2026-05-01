@@ -1,6 +1,6 @@
 class Account:
     """Represents a regular bank account."""
-
+# AI used for Type Hinting and Polymorphism syntax.
     def __init__(self, name: str, balance: float = 0) -> None:
         self.__account_name = name
         self.__account_balance = balance
@@ -71,7 +71,7 @@ class SavingAccount(Account):
         """Deposit money and apply interest every 5 deposits."""
         if amount <= 0:
             return False
-
+# AI used for Type Hinting and Polymorphism syntax.            
         result = super().deposit(amount)
 
         if result:
